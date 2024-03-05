@@ -35,5 +35,4 @@ const secureUrls = websiteLinks // append your array methods here
 	.filter(link => link.secure === 'yes')
 	.map(link => `https://${link.url}`)
 
-
 test("Example", secureUrls)

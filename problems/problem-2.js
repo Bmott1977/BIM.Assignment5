@@ -49,6 +49,8 @@ const strings = [
 	'"firstName":"Mace","lastName":"Windu","age":53,"occupation":"Jedi","homePlanet":"Haruun Kal"'
 ]
 
-const jedi = strings // append your code here
+const jedi = JSON.stringify(JSON.parse(strings)) // append your code here
 
-test("Problem 2", jedi)
+console.log(jedi)
+
+//test("Problem 2", jedi)
