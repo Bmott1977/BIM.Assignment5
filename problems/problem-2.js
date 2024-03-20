@@ -49,8 +49,8 @@ const strings = [
 	'"firstName":"Mace","lastName":"Windu","age":53,"occupation":"Jedi","homePlanet":"Haruun Kal"'
 ]
 
-const jedi = JSON.stringify(JSON.parse(strings)) // append your code here
+const jedi = strings.map(str => JSON.parse(`{ ${str}}`)).filter(({occupation}) => occupation.includes('Jedi')) // append your code here
 
 console.log(jedi)
 
-//test("Problem 2", jedi)
+test("Problem 2", jedi)

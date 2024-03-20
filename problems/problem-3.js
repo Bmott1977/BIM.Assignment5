@@ -28,7 +28,9 @@ const { test } = require('../tester')
 const isEven = number => number % 2 === 0 // returns true if the number is even
 
 const numbers = [ -10, -5, 0, 5, 10, 8, -2 ]
+//number => {if (isEven(number) === true) {console.log(`${number} is even`)}}
+const numberStrings = numbers.filter(number => number > 0).sort() // append your array methods here
 
-const numberStrings = numbers // append your array methods here
+console.log(numberStrings)
 
-test("Problem 3", numberStrings)
+//test("Problem 3", numberStrings)

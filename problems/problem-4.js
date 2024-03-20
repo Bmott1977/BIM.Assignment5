@@ -38,6 +38,6 @@ const items = [
 
 // Omit the 'age' element
 
-const person = items // append your code here
+const person = items.reduce() // append your code here
 
 test("Problem 4", person)
